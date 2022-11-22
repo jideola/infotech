@@ -4,15 +4,15 @@ This repo contains the terraform files to deploy an application environment.
 The environment is deployed on AWS in one VPC, 2 Public  and 2 private subnets
 
 ## Public Subnet
-VPN-server: to provide access to private subnet over private IP
-Proxy server: to route incoming traffic for specific devices (Jenkins webhook from github push)
-Elastic load Balancer: For public access of web server and load balancing.
-Nat-Gateway: To provide internet traffic to private subnet
+VPN-server: to provide access to private subnet over private IP  
+Proxy server: to route incoming traffic for specific devices (Jenkins webhook from github push)  
+Elastic load Balancer: For public access of web server and load balancing.  
+Nat-Gateway: To provide internet traffic to private subnet 
 
 ## Private Subnets
 
-Auto-Scaling group with load balancer and 2 backend web-servers
-All server in private-subnet have only private IPs, no public IP
+Auto-Scaling group with load balancer and 2 backend web-servers  
+All server in private-subnet have only private IPs, no public IP 
 
 ## Tomcat
 
